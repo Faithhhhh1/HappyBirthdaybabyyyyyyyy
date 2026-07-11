@@ -4,6 +4,17 @@
     box-sizing: border-box;
     cursor: none;
 }
+/* Add this here */
+html,
+body {
+    cursor: none !important;
+}
+
+*,
+*::before,
+*::after {
+    cursor: none !important;
+}
 
 body {
     min-height: 100vh;
@@ -27,6 +38,7 @@ body {
     transition: transform 0.2s;
     transform: translate(-50%, -50%);
     user-select: none;
+    opacity: 0.65; /* Adjust between 0.4 and 1 */
 }
 
 .container {
@@ -56,7 +68,7 @@ h1 {
     border: none;
     border-radius: 50px;
     color: white;
-    cursor: pointer;
+    cursor: none;
     box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
     opacity: 0;
